@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+Home page for models</br>
+
+<h1>First_model`s data</h1> </br>
+{% for model in first_models %}</br>
+
+    {{ model.author }}</br>
+    {{ model.date_posted | date:"F d, Y" }}</br>
+    {{ model.title }}</br>
+    {{ model.content }}</br>
+{% endfor %}
+</br>
+
+<h1>Second_model`s data</h1></br>
+
+{% for model in second_models %}</br>
+
+    {{ model.author }}</br>
+    {{ model.date_posted_2 | date:"F d, Y" }}</br>
+    {{ model.title_2 }}</br>
+    {{ model.content_2 }}</br>
+{% endfor %}
+
+</br>
+<h1>third_model`s data</h1></br>
+
+{% for model in third_models %}</br>
+
+    {{ model.author }}</br>
+    {{ model.date_posted_3 | date:"F d, Y" }}</br>
+    {{ model.title_3 }}</br>
+    {{ model.content_3 }}</br>
+{% endfor %}
+
+</html>
